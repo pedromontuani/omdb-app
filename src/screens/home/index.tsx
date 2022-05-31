@@ -107,7 +107,7 @@ const StyledSafeAreaView = styled(SafeAreaView)`
 const StyledUpperSafeAreaView = styled(SafeAreaView)`
   background-color: ${({ theme: { colors } }) => colors.primary};
   z-index: 1000;
-`
+`;
 
 const StyledFlatList = styled.FlatList.attrs(() => ({
   contentContainerStyle: {
