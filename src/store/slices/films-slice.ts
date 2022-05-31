@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { IFilm } from '../../types';
 
-export interface IBeneficiosState {
+export interface IFilmsState {
   films: Array<any>;
   sort: 'ALPHABETICAL' | 'RATING';
   year?: string;
@@ -10,7 +10,7 @@ export interface IBeneficiosState {
   error: string | null;
 }
 
-const initialState: IBeneficiosState = {
+export const initialState: IFilmsState = {
   films: [],
   sort: 'ALPHABETICAL',
   query: '',

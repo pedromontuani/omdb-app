@@ -6,7 +6,7 @@ import noData from '../../assets/no-data/no-data.png';
 
 const NoData: React.FC<{}> = () => {
   return (
-    <StyledContainer>
+    <StyledContainer testID="no-data">
       <Image source={noData} />
       <StyledText>Please use the search bar</StyledText>
     </StyledContainer>

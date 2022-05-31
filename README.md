@@ -10,6 +10,7 @@ Aplicativo para avaliação pelo processo seletivo da DTI.
 - React Redux: utilizado para gerenciar os estados globais da aplicação
 - Redux Saga: utilizado para gerenciar os side-effects da aplicação
 - React Native Flipper: utilizado para debug
+- Jest, Testing Library e React Test Renderer: testes unitários
 
 ## Instalação
 

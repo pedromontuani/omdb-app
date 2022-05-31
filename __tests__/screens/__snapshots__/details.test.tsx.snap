@@ -1,0 +1,825 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing details screen should render correctly 1`] = `
+<RNCSafeAreaView
+  edges={
+    Array [
+      "top",
+    ]
+  }
+  style={
+    Array [
+      Object {
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+>
+  <BVLinearGradient
+    colors={
+      Array [
+        2566914048,
+        0,
+      ]
+    }
+    endPoint={
+      Object {
+        "x": 0.5,
+        "y": 1,
+      }
+    }
+    locations={null}
+    startPoint={
+      Object {
+        "x": 0.5,
+        "y": 0,
+      }
+    }
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "elevation": 3,
+          "flexDirection": "row",
+          "height": 60,
+          "justifyContent": "space-between",
+          "left": 0,
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "position": "absolute",
+          "shadowColor": "rgba(0, 0, 0, 0.23)",
+          "shadowOffset": Object {
+            "height": 0,
+            "width": 1,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 2.22,
+          "top": 0,
+          "width": "100%",
+          "zIndex": 100,
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      hitSlop={
+        Object {
+          "bottom": 5,
+          "left": 5,
+          "right": 5,
+          "top": 5,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 26,
+              },
+            ],
+            Object {
+              "fontFamily": "Material Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </BVLinearGradient>
+  <RCTScrollView
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  >
+    <View>
+      <Image
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": "https://picsum.photos/200",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "borderBottomLeftRadius": 20,
+              "borderBottomRightRadius": 20,
+              "height": 240,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "paddingBottom": 20,
+              "paddingLeft": 20,
+              "paddingRight": 20,
+              "paddingTop": 20,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginRight": 10,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#5F49AB",
+                    "fontSize": 22,
+                    "fontWeight": "bold",
+                    "marginBottom": 4,
+                  },
+                ]
+              }
+            >
+              Mock Title
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "fontSize": 12,
+                    "textTransform": "capitalize",
+                  },
+                ]
+              }
+            >
+              Mock Genre
+            </Text>
+          </View>
+          <View
+            pointerEvents="none"
+            style={
+              Object {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <View
+              collapsable={false}
+              forwardedRef={[Function]}
+              style={Object {}}
+            >
+              <View
+                accessibilityRole="button"
+                accessible={true}
+                collapsable={false}
+                focusable={false}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Text
+                  allowFontScaling={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#FFC30B",
+                        "fontSize": 20,
+                      },
+                      Object {
+                        "transform": Array [
+                          Object {
+                            "scaleX": 1,
+                          },
+                        ],
+                      },
+                      Object {
+                        "fontFamily": "FontAwesome",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+            <View
+              collapsable={false}
+              forwardedRef={[Function]}
+              style={Object {}}
+            >
+              <View
+                accessibilityRole="button"
+                accessible={true}
+                collapsable={false}
+                focusable={false}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Text
+                  allowFontScaling={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#FFC30B",
+                        "fontSize": 20,
+                      },
+                      Object {
+                        "transform": Array [
+                          Object {
+                            "scaleX": 1,
+                          },
+                        ],
+                      },
+                      Object {
+                        "fontFamily": "FontAwesome",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+            <View
+              collapsable={false}
+              forwardedRef={[Function]}
+              style={Object {}}
+            >
+              <View
+                accessibilityRole="button"
+                accessible={true}
+                collapsable={false}
+                focusable={false}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Text
+                  allowFontScaling={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#FFC30B",
+                        "fontSize": 20,
+                      },
+                      Object {
+                        "transform": Array [
+                          Object {
+                            "scaleX": 1,
+                          },
+                        ],
+                      },
+                      Object {
+                        "fontFamily": "FontAwesome",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+            <View
+              collapsable={false}
+              forwardedRef={[Function]}
+              style={Object {}}
+            >
+              <View
+                accessibilityRole="button"
+                accessible={true}
+                collapsable={false}
+                focusable={false}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Text
+                  allowFontScaling={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#FFC30B",
+                        "fontSize": 20,
+                      },
+                      Object {
+                        "transform": Array [
+                          Object {
+                            "scaleX": 1,
+                          },
+                        ],
+                      },
+                      Object {
+                        "fontFamily": "FontAwesome",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+            <View
+              collapsable={false}
+              forwardedRef={[Function]}
+              style={Object {}}
+            >
+              <View
+                accessibilityRole="button"
+                accessible={true}
+                collapsable={false}
+                focusable={false}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Text
+                  allowFontScaling={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#FFC30B",
+                        "fontSize": 20,
+                      },
+                      Object {
+                        "transform": Array [
+                          Object {
+                            "scaleX": 1,
+                          },
+                        ],
+                      },
+                      Object {
+                        "fontFamily": "FontAwesome",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 15,
+                "marginBottom": 20,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 20,
+              },
+            ]
+          }
+        >
+          Mock Plot
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "marginBottom": 10,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#5F49AB",
+                  "fontSize": 12,
+                },
+              ]
+            }
+          >
+            Director
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 15,
+                },
+              ]
+            }
+          >
+            Mock Director
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "marginBottom": 10,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#5F49AB",
+                  "fontSize": 12,
+                },
+              ]
+            }
+          >
+            Actors
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 15,
+                },
+              ]
+            }
+          >
+            Mock actors
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "marginBottom": 10,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#5F49AB",
+                  "fontSize": 12,
+                },
+              ]
+            }
+          >
+            Writer
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 15,
+                },
+              ]
+            }
+          >
+            Mock Writer
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "marginBottom": 10,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#5F49AB",
+                  "fontSize": 12,
+                },
+              ]
+            }
+          >
+            Awards
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontSize": 15,
+                },
+              ]
+            }
+          >
+            Mock awards
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+  <RNCSafeAreaView
+    edges={
+      Array [
+        "bottom",
+        "left",
+        "right",
+        "top",
+      ]
+    }
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#f1f2f3",
+          "elevation": 2,
+          "shadowColor": "rgba(0, 0, 0, 0.2)",
+          "shadowOffset": Object {
+            "height": 0,
+            "width": 1,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 1.41,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 80,
+            "justifyContent": "space-around",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 12,
+              },
+              Array [
+                Object {
+                  "color": "#5F49AB",
+                  "fontSize": 26,
+                  "marginBottom": 4,
+                },
+              ],
+              Object {
+                "fontFamily": "Material Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "textAlign": "center",
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          Mock Year
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 12,
+              },
+              Array [
+                Object {
+                  "color": "#5F49AB",
+                  "fontSize": 26,
+                  "marginBottom": 4,
+                },
+              ],
+              Object {
+                "fontFamily": "Material Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "textAlign": "center",
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          Mock Country
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 12,
+              },
+              Array [
+                Object {
+                  "color": "#5F49AB",
+                  "fontSize": 26,
+                  "marginBottom": 4,
+                },
+              ],
+              Object {
+                "fontFamily": "Material Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "textAlign": "center",
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          Mock Runtime
+        </Text>
+      </View>
+    </View>
+  </RNCSafeAreaView>
+</RNCSafeAreaView>
+`;

@@ -20,12 +20,15 @@ const SearchHeader: React.FC<ISearchHeaderProps> = ({ onSubmit }) => {
   return (
     <StyledContainer>
       <StyledTextInput
+        testID="search-input"
         placeholder={'Search for films by name...'}
         value={value}
         onChangeText={setValue}
         onSubmitEditing={() => onSubmit(value)}
       />
-      <StyledTouchableOpactity onPress={() => onSubmit(value)}>
+      <StyledTouchableOpactity
+        testID="search-button"
+        onPress={() => onSubmit(value)}>
         <StyledIcon name="search" />
       </StyledTouchableOpactity>
     </StyledContainer>

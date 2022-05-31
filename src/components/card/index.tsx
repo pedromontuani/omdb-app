@@ -19,7 +19,7 @@ const Card: React.FC<ICardProps> = ({
   onPress,
 }) => {
   return (
-    <StyledTouchableOpacity onPress={onPress}>
+    <StyledTouchableOpacity onPress={onPress} testID="film-card">
       <StyledImage source={{ uri: imageUrl }} resizeMode="cover" />
       <StyledContentOuter>
         <StyledContentInner>

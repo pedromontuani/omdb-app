@@ -3,7 +3,7 @@ import { OMDB_API_KEY } from '../../contants';
 import { IFilmsQueryResponse } from '../../types';
 
 const api = axios.create({
-  baseURL: 'http://www.omdbapi.com/',
+  baseURL: 'https://www.omdbapi.com/',
   params: {
     apikey: OMDB_API_KEY,
   },
