@@ -6,9 +6,6 @@ Array [
     edges={
       Array [
         "bottom",
-        "left",
-        "right",
-        "top",
       ]
     }
     style={
@@ -22,6 +19,21 @@ Array [
       ]
     }
   >
+    <RNCSafeAreaView
+      edges={
+        Array [
+          "top",
+        ]
+      }
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#5F49AB",
+            "zIndex": 1000,
+          },
+        ]
+      }
+    />
     <View
       style={
         Array [
@@ -36,8 +48,8 @@ Array [
             "paddingTop": 0,
             "shadowColor": "rgba(0, 0, 0, 0.25)",
             "shadowOffset": Object {
-              "height": 1,
-              "width": 2,
+              "height": 2,
+              "width": 1,
             },
             "shadowOpacity": 1,
             "shadowRadius": 3.8,
@@ -205,13 +217,20 @@ Array [
           "alignItems": "center",
           "backgroundColor": "#5F49AB",
           "borderRadius": 30,
-          "bottom": 20,
+          "bottom": 40,
           "elevation": 6,
           "height": 60,
           "justifyContent": "center",
           "opacity": 1,
           "position": "absolute",
           "right": 20,
+          "shadowColor": "rgba(0, 0, 0, 0.27)",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 4.65,
           "width": 60,
           "zIndex": 100,
         }

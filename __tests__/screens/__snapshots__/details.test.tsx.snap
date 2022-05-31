@@ -11,6 +11,7 @@ Array [
     style={
       Array [
         Object {
+          "backgroundColor": "#5F49AB",
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
@@ -54,12 +55,12 @@ Array [
             "position": "absolute",
             "shadowColor": "rgba(0, 0, 0, 0.23)",
             "shadowOffset": Object {
-              "height": 0,
-              "width": 1,
+              "height": 1,
+              "width": 0,
             },
             "shadowOpacity": 1,
             "shadowRadius": 2.22,
-            "top": 0,
+            "top": 46,
             "width": "100%",
             "zIndex": 100,
           },
@@ -625,9 +626,6 @@ Array [
       edges={
         Array [
           "bottom",
-          "left",
-          "right",
-          "top",
         ]
       }
       style={
@@ -637,8 +635,8 @@ Array [
             "elevation": 2,
             "shadowColor": "rgba(0, 0, 0, 0.2)",
             "shadowOffset": Object {
-              "height": 0,
-              "width": 1,
+              "height": 1,
+              "width": 0,
             },
             "shadowOpacity": 1,
             "shadowRadius": 1.41,
