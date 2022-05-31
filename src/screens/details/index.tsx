@@ -51,7 +51,7 @@ const DetailsScreen: React.FC<{}> = () => {
           ))}
         </StyledContentContainer>
       </StyledScrollView>
-      <StyledSafeAreaFooter>
+      <StyledSafeAreaFooter edges={['bottom']}>
         <StyledFooter>
           <FooterItem icon="event" value={Year} />
           <FooterItem icon="public" value={Country} />
@@ -92,7 +92,7 @@ const FooterItem: React.FC<IFooterItemProps> = React.memo(({ icon, value }) => {
 
 const StyledSafeAreaView = styled(SafeAreaView)`
   flex: 1;
-  /* background-color: ${({ theme: { colors } }) => colors.primary}; */
+ background-color: ${({ theme: { colors } }) => colors.primary};
 `;
 
 const StyledLinearGradient = styled(LinearGradient).attrs(() => ({
@@ -102,7 +102,7 @@ const StyledLinearGradient = styled(LinearGradient).attrs(() => ({
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  top: 0;
+  top: ${Platform.OS === 'ios' ? 46 : 0};
   left: 0;
   height: 60px;
   width: 100%;

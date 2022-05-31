@@ -12,6 +12,8 @@ target 'OmdbApp' do
     :hermes_enabled => false
   )
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'OmdbAppTests' do
     inherit! :complete
     # Pods for testing

@@ -79,7 +79,8 @@ const HomeScreen: React.FC<{}> = () => {
   }, [status, error, showToast]);
 
   return (
-    <StyledSafeAreaView>
+    <StyledSafeAreaView edges={['bottom']}>
+      <StyledUpperSafeAreaView edges={['top']} />
       <SearchHeader onSubmit={queryFilms} />
       <StyledFlatList
         keyExtractor={item => item.imdbID}
@@ -102,6 +103,11 @@ const StyledSafeAreaView = styled(SafeAreaView)`
   flex: 1;
   background-color: #eee;
 `;
+
+const StyledUpperSafeAreaView = styled(SafeAreaView)`
+  background-color: ${({ theme: { colors } }) => colors.primary};
+  z-index: 1000;
+`
 
 const StyledFlatList = styled.FlatList.attrs(() => ({
   contentContainerStyle: {
