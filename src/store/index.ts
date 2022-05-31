@@ -1,6 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
-import reduxFlipper from 'redux-flipper';
 import { TypedUseSelectorHook, useSelector, useDispatch } from 'react-redux';
 import { all } from 'redux-saga/effects';
 
@@ -10,7 +9,7 @@ import filmsSaga from './sagas/films-saga';
 
 const sagaMiddleware = createSagaMiddleware();
 
-const middlewares = [sagaMiddleware, ...(__DEV__ ? [reduxFlipper()] : [])];
+const middlewares = [sagaMiddleware];
 
 function* rootSaga() {
   yield all([filmsSaga()]);
