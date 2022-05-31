@@ -44,7 +44,7 @@ const StyledContainer = styled.View`
   elevation: 5;
   ${Platform.OS === 'ios' &&
   css`
-    box-shadow: 2px 1px 3.8px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 2px 3.8px rgba(0, 0, 0, 0.25);
   `}
 `;
 

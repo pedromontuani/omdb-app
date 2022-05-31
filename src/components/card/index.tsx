@@ -41,7 +41,7 @@ const StyledTouchableOpacity = styled.TouchableOpacity`
   elevation: 2;
   ${Platform.OS === 'ios' &&
   css`
-    box-shadow: 1px 0 1.41px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1.41px rgba(0, 0, 0, 0.2);
   `}
 `;
 

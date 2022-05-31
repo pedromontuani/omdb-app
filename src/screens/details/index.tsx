@@ -111,7 +111,7 @@ const StyledLinearGradient = styled(LinearGradient).attrs(() => ({
   z-index: 100;
   ${Platform.OS === 'ios' &&
   css`
-    box-shadow: 1px 0 2.22px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 1px 2.22px rgba(0, 0, 0, 0.23);
   `}
 ` as unknown as typeof View;
 
@@ -180,7 +180,7 @@ const StyledSafeAreaFooter = styled(SafeAreaView)`
   elevation: 2;
   ${Platform.OS === 'ios' &&
   css`
-    box-shadow: 1px 0 1.41px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1.41px rgba(0, 0, 0, 0.2);
   `}
 `;
 

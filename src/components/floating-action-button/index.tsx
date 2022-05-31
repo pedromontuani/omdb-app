@@ -1,6 +1,7 @@
 import React from 'react';
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { Platform } from 'react-native';
 
 interface IFABProps {
   icon: string;
@@ -17,7 +18,7 @@ const FAB: React.FC<IFABProps> = ({ icon, onPress }) => {
 
 const StyledTouchableOpacity = styled.TouchableOpacity`
   position: absolute;
-  bottom: 20px;
+  bottom: ${Platform.OS === 'ios' ? 40 : 20}px;
   right: 20px;
   height: 60px;
   width: 60px;
@@ -26,6 +27,10 @@ const StyledTouchableOpacity = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   elevation: 6;
+  ${Platform.OS === 'ios' &&
+  css`
+    box-shadow: 0 3px 4.65px rgba(0, 0, 0, 0.27);
+  `}
   z-index: 100;
 `;
 

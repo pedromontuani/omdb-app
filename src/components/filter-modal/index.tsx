@@ -153,7 +153,7 @@ const StyledContentContainer = styled.View`
   elevation: 5;
   ${Platform.OS === 'ios' &&
   css`
-    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.25);
+    box-shadow: o 2px 4px rgba(0, 0, 0, 0.25);
   `}
 `;
 
