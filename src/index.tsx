@@ -6,14 +6,17 @@ import styled, { ThemeProvider } from 'styled-components/native';
 import Router from './router';
 import theme from './styles';
 import { store } from './store';
+import { ToastProvider } from './context/toast-context';
 
 const App: React.FC<{}> = () => {
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <SafeAreaProvider>
-          <StyledStatusBar barStyle="light-content" />
-          <Router />
+          <ToastProvider>
+            <StyledStatusBar barStyle="light-content" />
+            <Router />
+          </ToastProvider>
         </SafeAreaProvider>
       </ThemeProvider>
     </Provider>

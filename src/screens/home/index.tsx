@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { FlatList } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styled from 'styled-components/native';
@@ -15,6 +15,7 @@ import FilterModal, { IFilterOption } from '../../components/filter-modal';
 import { FILTER_OPTIONS } from '../../contants';
 import NoData from '../../components/no-data';
 import Loading from '../../components/loading';
+import { useToast } from '../../context/toast-context';
 
 const HomeScreen: React.FC<{}> = () => {
   const [modalVisible, setModalVisible] = useState<boolean>(false);
@@ -23,10 +24,12 @@ const HomeScreen: React.FC<{}> = () => {
     sort,
     query: searchTerm,
     status,
+    error,
   } = useAppSelector(state => state.films);
 
   const dispatch = useAppDispatch();
   const { navigate } = useNavigation<NavigationProp<RootStackParamList>>();
+  const { showToast } = useToast();
 
   const renderItem = useCallback(
     ({ item: { Title, Poster, details } }: { item: IFilm }) => (
@@ -65,6 +68,15 @@ const HomeScreen: React.FC<{}> = () => {
         })
       : [...films].sort((a, b) => b.details.avgRating - a.details.avgRating);
   }, [films, sort]);
+
+  useEffect(() => {
+    if (status === 'error') {
+      showToast({
+        message: error || 'An error occurred. Please try again later',
+        type: 'warning',
+      });
+    }
+  }, [status, error, showToast]);
 
   return (
     <StyledSafeAreaView>

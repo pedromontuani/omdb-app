@@ -10,6 +10,7 @@ import { Provider } from 'react-redux';
 import { store } from '../src/store';
 import { ThemeProvider } from 'styled-components/native';
 import theme from '../src/styles';
+import { ToastProvider } from '../src/context/toast-context';
 
 interface IAllThemeProviders {
   children: React.ReactElement;
@@ -19,7 +20,9 @@ const Providers = ({ children }: IAllThemeProviders) => {
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
-        <SafeAreaProvider>{children}</SafeAreaProvider>
+        <ToastProvider>
+          <SafeAreaProvider>{children}</SafeAreaProvider>
+        </ToastProvider>
       </ThemeProvider>
     </Provider>
   );
